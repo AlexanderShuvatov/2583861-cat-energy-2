@@ -1,0 +1,16 @@
+.program {
+  background-color: #f2f2f2;
+}
+
+.program__title {
+  @include secondary-font(24px, 37px, uppercase);
+}
+
+.program__description {
+  color: #444444;
+}
+
+.program__link {
+  @include secondary-font(16px, 16px, uppercase);
+  color: #000000;
+}
