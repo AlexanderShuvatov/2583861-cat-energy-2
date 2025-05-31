@@ -1,0 +1,8 @@
+.subscribe-form__heading {
+  @include secondary-font(16px, 24px);
+}
+
+.subscribe-form__email {
+  @include secondary-font(20px, 100%, uppercase);
+  color: #444444;
+}

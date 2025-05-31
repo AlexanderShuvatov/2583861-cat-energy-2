@@ -1,0 +1,12 @@
+.product {
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+    background-size: auto 430px;
+    background-position: center bottom;
+  }
+}
+
+.product__title {
+  @include secondary-font(16px, 20px, uppercase);
+  color: #222222;
+}

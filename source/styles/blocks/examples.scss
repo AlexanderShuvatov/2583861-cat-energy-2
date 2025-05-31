@@ -1,0 +1,15 @@
+.examples {
+  background-color: #eaeaea;
+}
+
+.examples__title {
+  @include secondary-font(36px, 40px);
+}
+
+.examples__text {
+  color: #444444;
+}
+
+.examples__cost {
+  @include secondary-font(14px, 20px, uppercase);
+}
