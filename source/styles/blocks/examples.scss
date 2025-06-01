@@ -1,5 +1,5 @@
 .examples {
-  background-color: #eaeaea;
+  background-color: $alternative-background-color;
 }
 
 .examples__title {
@@ -7,7 +7,7 @@
 }
 
 .examples__text {
-  color: #444444;
+  color: $primary-text-color;
 }
 
 .examples__cost {

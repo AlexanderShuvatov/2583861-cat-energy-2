@@ -1,16 +1,16 @@
 .additional-offer__name {
   @include secondary-font(16px, 16px, uppercase);
-  color: #222222;
+  color: $primary-heading-color;
 }
 
 .additional-offer__weight {
   font-size: 14px;
   font-weight: 14px;
-  color: #444444;
+  color: $primary-text-color;
 }
 
 .additional-offer__price {
   font-size: 14px;
   font-weight: 14px;
-  color: #444444;
+  color: $primary-text-color;
 }

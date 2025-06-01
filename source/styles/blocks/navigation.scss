@@ -1,4 +1,4 @@
 .navigation__link {
   @include secondary-font(20px, 20px, uppercase);
-  color: #000000;
+  color: $main-color;
 }

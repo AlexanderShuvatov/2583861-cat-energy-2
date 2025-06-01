@@ -1,5 +1,5 @@
 .program {
-  background-color: #f2f2f2;
+  background-color: $secondary-background-color;
 }
 
 .program__title {
@@ -7,10 +7,10 @@
 }
 
 .program__description {
-  color: #444444;
+  color: $primary-text-color;
 }
 
 .program__link {
   @include secondary-font(16px, 16px, uppercase);
-  color: #000000;
+  color: $main-color;
 }

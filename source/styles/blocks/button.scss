@@ -2,12 +2,12 @@
   @include secondary-font(16px, 20px, uppercase);
 
   &--primary {
-    color: #ffffff;
+    color: $alternative-color;
     background-color: $primary-button-color;
   }
 
   &--secondary {
-    color: #444444;
+    color: $primary-text-color;
     background-color: $secondary-button-color;
   }
 }
