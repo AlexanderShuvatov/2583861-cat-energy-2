@@ -1,3 +1,7 @@
 .catalog__title {
-  @include secondary-font(36px, 36px);
+  @include font($secondary-font, 36px, 36px, $main-color);
+}
+
+.catalog__list {
+  list-style: none;
 }

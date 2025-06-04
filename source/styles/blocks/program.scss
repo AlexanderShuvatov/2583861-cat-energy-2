@@ -3,7 +3,7 @@
 }
 
 .program__title {
-  @include secondary-font(24px, 37px, uppercase);
+  @include font($secondary-font, 24px, 37px, $main-color, uppercase);
 }
 
 .program__description {
@@ -11,6 +11,6 @@
 }
 
 .program__link {
-  @include secondary-font(16px, 16px, uppercase);
-  color: $main-color;
+  @include font($secondary-font, 16px, 16px, $main-color, uppercase);
+  text-decoration: none;
 }

@@ -1,10 +1,8 @@
 .more-cards__title {
-  @include secondary-font(16px, 20px, uppercase);
-  color: $secondary-heading-color;
+  @include font($secondary-font, 16px, 20px, $secondary-heading-color, uppercase);
 }
 
 .more-cards__subtitle {
   font-size: 12px;
   line-height: 16px;
-  color: $primary-text-color;
 }

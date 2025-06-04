@@ -6,7 +6,10 @@
   }
 }
 
+.product__item-link {
+  text-decoration: none;
+}
+
 .product__title {
-  @include secondary-font(16px, 20px, uppercase);
-  color: $primary-heading-color;
+  @include font($secondary-font, 16px, 20px, $primary-heading-color, uppercase);
 }

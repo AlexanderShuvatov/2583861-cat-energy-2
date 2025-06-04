@@ -1,4 +1,8 @@
+.navigation__list {
+  list-style: none;
+}
+
 .navigation__link {
-  @include secondary-font(20px, 20px, uppercase);
-  color: $main-color;
+  @include font($secondary-font, 20px, 20px, $main-color, uppercase);
+  text-decoration: none;
 }

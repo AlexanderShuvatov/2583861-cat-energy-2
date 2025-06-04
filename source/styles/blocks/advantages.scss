@@ -1,7 +1,7 @@
 .advantages__title {
-  @include secondary-font(36px, 40px);
+  @include font($secondary-font, 36px, 40px, $main-color);
 }
 
-.advantages__item {
-  color: $primary-text-color;
+.advantages__list {
+  list-style: none;
 }

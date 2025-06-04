@@ -3,13 +3,9 @@
 }
 
 .examples__title {
-  @include secondary-font(36px, 40px);
-}
-
-.examples__text {
-  color: $primary-text-color;
+  @include font($secondary-font, 36px, 40px, $main-color);
 }
 
 .examples__cost {
-  @include secondary-font(14px, 20px, uppercase);
+  @include font($secondary-font, 14px, 20px, $main-color, uppercase);
 }

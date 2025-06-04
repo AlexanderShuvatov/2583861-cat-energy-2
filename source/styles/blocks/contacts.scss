@@ -5,14 +5,12 @@
 }
 
 .contacts__heading {
-  @include secondary-font(16px, 20px, uppercase);
-  color: $secondary-heading-color;
+  @include font($secondary-font, 16px, 20px, $secondary-heading-color, uppercase);
 }
 
 .contacts__address {
   line-height: 20px;
   font-style: normal;
-  color: $primary-text-color;
 }
 
 .contacts__map {

@@ -1,8 +1,7 @@
 .subscribe-form__heading {
-  @include secondary-font(16px, 24px);
+  @include font($secondary-font, 16px, 24px, $main-color);
 }
 
 .subscribe-form__email {
-  @include secondary-font(20px, 100%, uppercase);
-  color: $primary-text-color;
+  @include font($secondary-font, 20px, 30px, $primary-text-color, uppercase);
 }

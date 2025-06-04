@@ -1,8 +1,8 @@
 .button {
-  @include secondary-font(16px, 20px, uppercase);
+  @include font($secondary-font, 16px, 20px, $alternative-color, uppercase);
+  text-decoration: none;
 
   &--primary {
-    color: $alternative-color;
     background-color: $primary-button-color;
   }
 
