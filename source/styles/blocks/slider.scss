@@ -12,6 +12,7 @@
     background-color: currentColor;
     border-radius: 2px;
     border: none;
+    transform: translateX(-50%);
 
     &::before {
       position: absolute;
