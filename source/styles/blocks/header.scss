@@ -16,6 +16,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  row-gap: 5px;
+  flex-wrap: wrap;
   width: calc(50% + 30px);
   min-height: 66px;
 
@@ -31,5 +33,15 @@
 
   @media (min-width: $desktop) {
     min-height: 59px;
+  }
+}
+
+.header__navigation {
+  @media (min-width: $tablet) {
+    width: 65%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 50%;
   }
 }

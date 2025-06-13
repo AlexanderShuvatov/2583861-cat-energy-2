@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop) {
@@ -49,6 +50,7 @@
   display: flex;
   gap: 24px;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -58,11 +60,16 @@
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
   }
+
+  @media (min-width: $tablet) {
+    width: 50%;
+  }
 }
 
 .footer__copyrights {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
 }

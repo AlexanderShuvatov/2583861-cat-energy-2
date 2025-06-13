@@ -1,6 +1,6 @@
 .promo {
   background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/index-background-mobile@1x.jpg"), linear-gradient(to right, #4f4f55 50%, #343437 100%);
-  background-size: 100% 66%, 320px 302px, 100% 66%;
+  background-size: 100% 64%, 320px 302px, 100% 64%;
   background-repeat: no-repeat;
   background-position: left top, top center, left top;
 
@@ -46,16 +46,14 @@
 
   @media (min-width: $tablet) {
     width: 708px;
-    min-height: 875px;
     margin: 0 auto;
-    padding: 65px 0;
+    padding: 65px 0 526px;
   }
 
   @media (min-width: $desktop) {
     width: 1220px;
-    min-height: 580px;
-    margin: 0 auto 82px;
-    padding: 110px 0 0;
+    margin: 0 auto;
+    padding: 110px 0 266px;
   }
 }
 
@@ -78,7 +76,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 0 50% 0 80px;
+    padding: 0 55% 0 80px;
   }
 }
 
@@ -102,7 +100,7 @@
 
   @media (min-width: $desktop) {
     margin-bottom: 52px;
-    padding: 0 50% 0 80px;
+    padding: 0 55% 0 80px;
   }
 }
 

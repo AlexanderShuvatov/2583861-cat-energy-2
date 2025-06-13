@@ -1,4 +1,5 @@
-/* в этот файл добавляет скрипты*/
+document.querySelector('.navigation').classList.remove('navigation--nojs');
+
 const menuToggle = document.querySelector('.navigation__toggle');
 const navigationList = document.querySelector('.navigation__list');
 

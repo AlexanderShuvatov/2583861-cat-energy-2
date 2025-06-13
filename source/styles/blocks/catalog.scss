@@ -36,10 +36,12 @@
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 60px;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 63px;
   }
 }
 
