@@ -1,6 +1,54 @@
 .product {
+  position: relative;
+
+  @media (max-width: ($tablet - 1px)) {
+    display: flex;
+    row-gap: 17px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 20px 24px;
+    border-bottom: 1px solid #ebebeb;
+
+    &:first-child {
+      padding-top: 19px;
+      border-top: 1px solid #ebebeb;
+    }
+  }
+
   @media (min-width: $tablet) {
-    background-color: $block-background-color;
+    padding: 10px 37px 40px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 430px;
+      background-color: #f2f2f2;
+      z-index: -1;
+    }
+  }
+}
+
+.product__image {
+  display: block;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto 22px;
+  }
+}
+
+.product-container {
+  flex-grow: 1;
+
+  @media (max-width: ($tablet - 1px)) {
+    width: 50%;
+  }
+
+  @media (min-width: $tablet) {
+    width: 100%;
   }
 }
 
@@ -9,5 +57,34 @@
 }
 
 .product__title {
+  width: 65%;
+  margin: 0;
+  margin-bottom: 14px;
+
   @include font($secondary-font, 16px, 20px, $secondary-text-color, uppercase);
+
+  @media (min-width: $tablet) {
+    width: 50%;
+    min-height: 48px;
+    margin: 0 auto 19px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    width: 75%;
+  }
+}
+
+.product__information {
+  @media (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+}
+
+.product__order-button {
+  @media (max-width: ($tablet - 1px)) {
+    width: 100%;
+  }
 }

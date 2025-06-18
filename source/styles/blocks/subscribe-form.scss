@@ -28,14 +28,28 @@
 
 .subscribe-form__email {
   @include font($secondary-font, 20px, 30px, #444444, uppercase);
+  border: none;
+  outline: 1px solid #e7e7e7;
   box-sizing: border-box;
 
-  @media (max-width: calc($tablet - 1px)) {
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+  }
+
+  @media (max-width: ($tablet - 1px)) {
     width: 100%;
     margin-bottom: 16px;
   }
 
-  @media (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+  @media (min-width: $tablet) and (max-width: ($desktop - 1px)) {
     width: 50%;
     flex-grow: 1;
   }

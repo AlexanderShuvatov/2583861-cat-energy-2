@@ -18,6 +18,15 @@
     content: "";
   }
 
+  &:hover,
+  &:focus {
+    color: $element-background-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--vk::before {
     mask-image: url("../../icons/stack.svg#vkontakte-icon");
     mask-size: 27px 17px;
@@ -31,14 +40,5 @@
   &--telegram::before {
     mask-image: url("../../icons/stack.svg#telegram-icon");
     mask-size: 20px 17px;
-  }
-
-  &:hover,
-  &:focus {
-    color: $element-background-color;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
