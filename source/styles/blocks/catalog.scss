@@ -49,3 +49,17 @@
     gap: 63px 80px;
   }
 }
+
+.catalog__card {
+  display: flex;
+
+  @media (max-width: ($tablet - 1px)) {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: column;
+  }
+}
