@@ -21,7 +21,6 @@
   position: relative;
   width: fit-content;
   margin: 0;
-  margin-bottom: 36px;
   padding-right: 40px;
   background-color: #ffffff;
 
@@ -41,18 +40,22 @@
   }
 
   @media (max-width: ($tablet - 1px)) {
+    margin-bottom: 34px;
     box-shadow: -40px 0 0 0 #ffffff;
   }
 
   @media (min-width: $tablet) {
+    margin-bottom: 80px;
     padding-left: 40px;
     font-size: 32px;
     line-height: 32px;
   }
 
   @media (min-width: $desktop) {
+    padding-left: 0;
     font-size: 40px;
     line-height: 40px;
+    box-shadow: -40px 0 0 0 #ffffff;
   }
 }
 
@@ -72,18 +75,5 @@
   @media (min-width: $desktop) {
     flex-grow: 1;
     margin-right: 80px;
-  }
-}
-
-.additional-offers__item {
-  padding-top: 13px;
-
-  @media (min-width: $desktop) {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 15px;
-    padding-bottom: 17px;
   }
 }

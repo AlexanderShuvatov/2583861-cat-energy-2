@@ -22,7 +22,7 @@
   @media (min-width: $tablet) and (max-width: ($desktop - 1px)) {
     display: flex;
     flex-wrap: wrap;
-    padding: 57px 125px 60px 77px;
+    padding: 57px 107px 60px 77px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), image-set(url("../../images/catalog-background-tablet@1x.png") type("image/png") 1x, url("../../images/catalog-background-tablet@2x.png") type("image/png") 2x);
 
     &::before {
@@ -65,7 +65,7 @@
 
   @media (min-width: $tablet) and (max-width: ($desktop - 1px)) {
     margin: 0;
-    margin-top: 14px;
+    margin-top: 13px;
     margin-left: auto;
     text-align: left;
   }

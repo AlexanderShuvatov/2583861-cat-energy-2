@@ -19,7 +19,7 @@
   row-gap: 5px;
   flex-wrap: wrap;
   width: calc(50% + 30px);
-  min-height: 66px;
+  min-height: 65px;
   padding-left: 20px;
 
   @media (min-width: $tablet) {
@@ -35,8 +35,9 @@
 }
 
 .header__navigation {
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet) and (max-width: ($desktop - 1px)) {
     width: 65%;
+    margin-right: 6px;
   }
 
   @media (min-width: $desktop) {

@@ -67,6 +67,10 @@
   line-height: 20px;
   font-style: normal;
 
+  @media (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+    text-align: right;
+  }
+
   @media (min-width: $tablet) {
     font-size: 16px;
   }

@@ -23,14 +23,18 @@
 
   @media (min-width: $desktop) {
     width: 1220px;
+    margin-bottom: 8px;
   }
 }
 
 .subscribe-form__email {
+  padding: 13px;
+  box-sizing: border-box;
+  z-index: 1;
+
   @include font($secondary-font, 20px, 30px, #444444, uppercase);
   border: none;
   outline: 1px solid #e7e7e7;
-  box-sizing: border-box;
 
   &:hover {
     outline: 1px solid #cdcdcd;

@@ -12,6 +12,10 @@
     line-height: 20px;
     border-bottom: 1px solid #cdcdcd;
   }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 8px;
+  }
 }
 
 .characteristics__attribute {

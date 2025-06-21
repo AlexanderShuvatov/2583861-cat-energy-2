@@ -174,7 +174,7 @@
 .program__link {
   display: flex;
   align-items: center;
-  column-gap: 15px;
+  column-gap: 17px;
   padding: 4px 60px 4px 0;
   box-sizing: border-box;
 
@@ -182,13 +182,14 @@
   text-decoration: none;
 
   &::after {
-    width: 27px;
+    width: 24px;
     height: 12px;
     background-image: url("../../icons/stack.svg#arrow-icon");
     background-size: 32px 12px;
     background-repeat: no-repeat;
     background-position: right;
     content: "";
+    transition: width 0.2s;
   }
 
   &:hover::after {

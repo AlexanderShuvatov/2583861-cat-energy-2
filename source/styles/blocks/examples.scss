@@ -61,7 +61,7 @@
   }
 
   @media (min-width: $tablet) {
-    margin-bottom: 55px;
+    margin-bottom: 56px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -81,7 +81,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 99px;
+    margin-bottom: 85px;
   }
 }
 
@@ -131,6 +131,7 @@
 .examples__cost-value {
   @media (min-width: $tablet) and (max-width: ($desktop - 1px)) {
     display: block;
+    margin-top: 9px;
   }
 
   @media (min-width: $desktop) {
