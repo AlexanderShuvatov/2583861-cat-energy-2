@@ -1,0 +1,88 @@
+.comments-form {
+  border: none;
+}
+
+.comments-form__title {
+  position: relative;
+  padding: 0;
+  background-color: #ffffff;
+
+  @include font($secondary-font, 24px, 26px, #000000);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 0;
+    display: block;
+    width: 100vw;
+    height: 2px;
+    background-color: #68b738;
+    box-shadow: 100vw 0 0 0 #68b738;
+    z-index: -1;
+  }
+
+  @media (max-width: ($tablet - 1px)) {
+    margin-bottom: 38px;
+    padding-right: 20px;
+    box-shadow: -20px 0 0 0 #ffffff;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 87px;
+    padding-right: 42px;
+    font-size: 36px;
+    line-height: 36px;
+    box-shadow: -40px 0 0 0 #ffffff;
+
+    &::before {
+      top: 22px;
+    }
+
+    &::after {
+      top: 22px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 75px;
+  }
+}
+
+.comments-form__input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  outline: 1px solid #e7e7e7;
+
+  @include font($secondary-font, 16px, 18px, #444444, uppercase);
+
+  @media (max-width: ($tablet - 1px)) {
+    min-height: 150px;
+    padding: 14px 15px;
+  }
+
+  @media (min-width: $tablet) {
+    min-height: 175px;
+    padding: 11px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+  }
+
+  &:disabled {
+    outline: 1px solid #cdcdcd;
+    opacity: 0.3;
+  }
+}
