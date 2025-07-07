@@ -1,0 +1,143 @@
+.contacts-form {
+  border: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    column-gap: 80px;
+    flex-wrap: wrap;
+  }
+}
+
+.contacts-form__title {
+  position: relative;
+  padding: 0;
+  background-color: #ffffff;
+
+  @include font($secondary-font, 24px, 26px, #000000);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 0;
+    display: block;
+    width: 100vw;
+    height: 2px;
+    background-color: #68b738;
+    box-shadow: 100vw 0 0 0 #68b738;
+    z-index: -1;
+  }
+
+  @media (max-width: ($tablet - 1px)) {
+    margin-bottom: 35px;
+    padding-right: 25px;
+    box-shadow: -20px 0 0 0 #ffffff;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 76px;
+    padding-right: 38px;
+    font-size: 36px;
+    line-height: 36px;
+    box-shadow: -40px 0 0 0 #ffffff;
+
+    &::before {
+      top: 22px;
+    }
+
+    &::after {
+      top: 22px;
+    }
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.contacts-form__label {
+  position: relative;
+  display: flex;
+  column-gap: 14px;
+  align-items: center;
+  width: 100%;
+
+  @include font($secondary-font, 16px, 18px, #444444, uppercase);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: ($tablet - 1px)) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 570px;
+
+    &::after {
+      right: 17px;
+    }
+  }
+
+  &--email::after {
+    width: 17px;
+    height: 13px;
+    background-image: url("../../icons/stack.svg#email-icon");
+  }
+
+  &--phone::after {
+    width: 15px;
+    height: 15px;
+    background-image: url("../../icons/stack.svg#phone-icon");
+  }
+}
+
+.contacts-form__input {
+  flex-grow: 1;
+  box-sizing: border-box;
+  border: none;
+  outline: 1px solid #e7e7e7;
+
+  @include font($secondary-font, 16px, 18px, #444444, uppercase);
+
+  @media (max-width: ($tablet - 1px)) {
+    padding: 14px 40px 13px 15px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 11px 50px 11px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+  }
+
+  &:disabled {
+    outline: 1px solid #cdcdcd;
+    opacity: 0.3;
+  }
+}

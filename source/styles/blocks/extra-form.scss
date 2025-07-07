@@ -1,0 +1,113 @@
+.extra-form {
+  border: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 93px;
+  }
+
+  @media (min-width: $desktop) {
+    column-gap: 81px;
+  }
+}
+
+.extra-form__title {
+  position: relative;
+  padding: 0;
+  background-color: #ffffff;
+
+  @include font($secondary-font, 24px, 26px, #000000);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 0;
+    display: block;
+    width: 100vw;
+    height: 2px;
+    background-color: #68b738;
+    box-shadow: 100vw 0 0 0 #68b738;
+    z-index: -1;
+  }
+
+  @media (max-width: ($tablet - 1px)) {
+    margin-bottom: 34px;
+    padding-right: 20px;
+    box-shadow: -20px 0 0 0 #ffffff;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 57px;
+    padding-right: 40px;
+    font-size: 36px;
+    line-height: 36px;
+    box-shadow: -40px 0 0 0 #ffffff;
+
+    &::before {
+      top: 22px;
+    }
+  }
+}
+
+.extra-form__label {
+  display: flex;
+  column-gap: 13px;
+  align-items: center;
+  width: 100%;
+
+  @include font($secondary-font, 16px, 18px, #444444, uppercase);
+
+  @media (max-width: ($tablet - 1px)) {
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 40%;
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 20%;
+  }
+}
+
+.extra-form__custom-input {
+  flex-shrink: 0;
+  display: block;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cdcdcd;
+
+  &::before {
+    content: "";
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../icons/stack.svg#checkbox-icon");
+    background-size: 18px 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet) {
+    width: 38px;
+    height: 38px;
+    margin-right: 7px;
+
+    &::before {
+      background-size: 24px 19px;
+    }
+  }
+}
+
+.extra-form__input {
+  display: none;
+
+  &:checked ~ .extra-form__custom-input::before {
+    display: block;
+  }
+}

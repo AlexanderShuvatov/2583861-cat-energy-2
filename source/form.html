@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог питания для котов Cat Energy</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Сайт функционального питания Cat Energy: подбор программ питания, интернет-магазин">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header" data-test="header">
+    <div class="header__container">
+      <a class="header__logo logo" href="index.html">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/cat-energy-logo-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/cat-energy-logo-tablet.svg" width="60" height="50">
+          <img class="logo__image" src="images/cat-energy-logo-mobile.svg" width="33" height="38" alt="Торговый знак Cat Energy с изображением кота">
+        </picture>
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/cat-energy-text-lighter.svg">
+          <img class="logo__text" src="images/cat-energy-text-darker.svg" width="101" height="18" alt="Текстовый логотип Cat Energy">
+        </picture>
+      </a>
+      <nav class="header__navigation navigation navigation--nojs">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current" href="#" aria-current="page">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="form">
+      <h1 class="form__title">Подбор программы</h1>
+      <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__container">
+          <fieldset class="form__user-info user-form">
+            <legend class="visually-hidden">Пользовательская информация</legend>
+            <label class="user-form__label">ИМЯ:*<input class="user-form__input" type="text" name="name" value="Барсик" autocomplete="off" required></label>
+            <label class="user-form__label">Вес (кг):*<input class="user-form__input" type="number" name="weight" value="7" required></label>
+            <label class="user-form__label">Возраст (лет):<input class="user-form__input" type="number" name="age" value="7"></label>
+          </fieldset>
+          <fieldset class="form__program-type program-form">
+            <legend class="visually-hidden">Вид программы</legend>
+            <label class="program-form__label"><input class="program-form__input" type="radio" name="program" value="Похудение" checked><span class="program-form__custom-input"></span>Похудение</label>
+            <label class="program-form__label"><input class="program-form__input" type="radio" name="program" value="Набор массы"><span class="program-form__custom-input"></span>Набор массы</label>
+            <label class="program-form__label"><input class="program-form__input" type="radio" name="program" value="Не знаю (Нужен ваш совет)"><span class="program-form__custom-input"></span>Не знаю (Нужен ваш совет)</label>
+          </fieldset>
+        </div>
+        <fieldset class="form__contacts-info contacts-form">
+          <legend class="contacts-form__title">Контактные данные<br> (владельца кота)</legend>
+          <label class="contacts-form__label contacts-form__label--email">E-mail:*<input class="contacts-form__input" type="email" name="email" value="kuklachev@gmail.com" autocomplete="off" required></label>
+          <label class="contacts-form__label contacts-form__label--phone">Телефон:*<input class="contacts-form__input" type="tel" name="phone-number" value="8 (960) 900-60-90" required></label>
+        </fieldset>
+        <fieldset class="form__comments comments-form">
+          <legend class="comments-form__title">Комментарий</legend>
+          <textarea class="comments-form__input" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="form__extra extra-form">
+          <legend class="extra-form__title">Дополнительно</legend>
+          <label class="extra-form__label"><input class="extra-form__input" type="checkbox" name="Сахарозаменитель" checked><span class="extra-form__custom-input"></span>Сахарозаменитель</label>
+          <label class="extra-form__label"><input class="extra-form__input" type="checkbox" name="Питьевая вода"><span class="extra-form__custom-input"></span>Питьевая вода</label>
+          <label class="extra-form__label"><input class="extra-form__input" type="checkbox" name="Молоко"><span class="extra-form__custom-input"></span>Молоко</label>
+          <label class="extra-form__label"><input class="extra-form__input" type="checkbox" name="Витамины"><span class="extra-form__custom-input"></span>Витамины</label>
+        </fieldset>
+        <div class="form__button-wrapper">
+          <button class="form__button button button--primary" type="submit">Отправить заявку</button>
+          <p class="form__footnote">*— Обязательные поля</p>
+        </div>
+      </form>
+    </section>
+    <section class="contacts contacts--dark-bg contacts--nojs" data-test="contacts">
+      <div class="contacts__container">
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <p class="contacts__heading">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
+            <span class="contacts__city">Санкт-Петербург</span>
+          </address>
+        </div>
+        <div class="contacts__map-wrapper">
+          <iframe class="contacts__map" title="Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989428319078!2d30.320508377320824!3d59.93879686208728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0xa24b26c0d196de71!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1750173124787!5m2!1sru!2sru" width="600" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <picture>
+            <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/location-desktop@1x.jpg 1x, images/location-desktop@2x.jpg 2x">
+            <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/location-tablet@1x.jpg 1x, images/location-tablet@2x.jpg 2x">
+            <img class="contacts__location" width="320" height="362" src="images/location-mobile@1x.jpg" srcset="images/location-mobile@2x.jpg 2x" alt="Карта с месторасположением компании Cat Energy" loading="lazy">
+          </picture>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" data-test="footer">
+    <div class="footer__container">
+      <a class="footer__logo logo" href="index.html">
+        <img class="logo__text" src="images/cat-energy-text-darker.svg" width="128" height="24" alt="Текстовый логотип Cat Energy">
+      </a>
+      <ul class="footer__socials socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vk" href="#">
+            <span class="visually-hidden">VKontakte</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--telegram" href="#">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__copyrights copyrights" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="copyrights__htmlacademy-text">HTML Academy</p>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
